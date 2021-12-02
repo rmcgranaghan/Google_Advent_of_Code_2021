@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<script src="https://d3js.org/d3.v3.min.js"></script>
+
+<head>
+   <h1 align="center"><u> This is a trial page for creating an interactive dashboard using data processing in Python and d3.js front end</u></h1>
+                      do something to begin...</p>
+                        
+                                                
+</head>
+
+
+<style>
+
+text {
+  font: 10px sans-serif;
+}
+
+button{
+  font: 10px sans-serif;
+    
+}
+
+rect.background {
+  fill: white;
+  stroke: #646464;
+  stroke-width: 1px;
+  stroke-dasharray: 2,2;
+  stroke-linejoin: round;
+}
+
+
+.axis {
+  shape-rendering: crispEdges;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+}
+
+.left-div {
+  float:left;
+  height: 520px;
+  width: 750px;
+  
+}
+.right-div {
+  float:right;
+  height: 520px;
+  width: 750px;
+  
+}
+
+</style>
+
+.axis {
+  shape-rendering: crispEdges;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+}
+
+.left-div {
+  float:left;
+  height: 520px;
+  width: 750px;
+  
+}
+.right-div {
+  float:right;
+  height: 520px;
+  width: 750px;
+  
+}
+
+</style>
+
+d3.json(“/get-data”, function(error, root){
+partition.nodes(root);
+x.domain([0, root.value]).nice();
+down(root, 0);});
+
+
+
+
