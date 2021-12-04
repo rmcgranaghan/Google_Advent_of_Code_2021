@@ -80,11 +80,18 @@ rect.background {
 
 </style>
 
-d3.json(“/get-data”, function(error, root){
-partition.nodes(root);
-x.domain([0, root.value]).nice();
-down(root, 0);});
 
-
-
-
+<body>
+	<script type="text/javascript">
+		var dataset = [10,11,12,7];
+		d3.select("svg").selectAll("circle")
+			.data(dataset)
+			.enter()
+			.append("circle");
+		d3.selectAll("circle")
+			.attr("r", function(d) {
+				return d
+			});
+	</script>
+</body>
+</html>
